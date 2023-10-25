@@ -50,3 +50,54 @@ h1 {
 h3 {
     color: #274587;
 }
+
+.aboutpage {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutdiv {
+    display: flex;
+    width: 70%;
+    padding: 3rem;
+    align-self: center;
+}
+
+.aboutpic {
+    width: 30%;
+}
+
+h5 {
+    align-self: center;
+    color: #cc1f33
+}
+
+a {
+    color: #274587;
+    text-decoration: none;
+}
+
+.menupage {
+    width: 60%;
+    height: 30%;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 3rem;
+    margin-top: 1.5rem;
+}
+
+.meal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #db384b;
+    border-radius: 8px;
+    width: 90%;
+    height: 80%;
+}
+
+.mealpic {
+    width: 60%;
+    height: 50%;
+    border-radius: 8px;
+}

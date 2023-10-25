@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/about.js":
+/*!**********************!*\
+  !*** ./src/about.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadAbout)\n/* harmony export */ });\nfunction loadAbout() {\n    const div = document.getElementById(\"content\");\n    const aboutdiv = document.createElement(\"div\");\n    aboutdiv.classList.add(\"aboutpage\");\n\n    aboutdiv.innerHTML = `\n        <div class=\"aboutdiv\">\n            <div class=\"infodiv\">\n                <h5>Los Pollos Hermanos (Spanish pronunciation: [los po.ʝos eɾ.ma.nos]; broken Spanish for The Chicken Brothers) is a fast food restaurant chain specializing in chicken</h5>\n                <a href=\"https://breakingbad.fandom.com/wiki/Los_Pollos_Hermanos\"><p>Read More</p></a>\n            </div>\n            <img src=\"gustavo.png\" alt=\"founderpic\" class=\"aboutpic\">\n        </div>`\n\n    div.appendChild(aboutdiv);\n};\n\n//# sourceURL=webpack://top-restaurant-page/./src/about.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadHome)\n/* harmony export */ });\nfunction loadHome() {\n    document.addEventListener('DOMContentLoaded', function() {\n    const div = document.getElementById(\"content\");\n\n    div.innerHTML = `<nav class=\"navbar\">\n    <div class=\"navdiv\">\n        <ul>\n            <li><a href=\"#\" id=\"home\">Home</a></li>\n            <li><a href=\"#\" id=\"menu\">Menu</a></li>\n            <li><a href=\"#\" id=\"about\">About</a></li>\n        </ul>\n    </div>\n</nav>\n<h1>Welcome to Los Pollos Hermanos</h1>\n<h3>Best Fast Food Restaurant Chain specializing in Chicken</h3>`\n    });\n};\n\n\n\n//# sourceURL=webpack://top-restaurant-page/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadHome)\n/* harmony export */ });\nfunction loadHome() {\n    const div = document.getElementById(\"content\");\n    const homediv = document.createElement(\"div\");\n    homediv.classList.add(\"homepage\");\n\n    homediv.innerHTML = `\n                        <h1>Welcome to Los Pollos Hermanos</h1>\n                        <h3>Best Fast Food Restaurant Chain specializing in Chicken</h3>`\n\n    div.appendChild(homediv);\n};\n\n\n\n//# sourceURL=webpack://top-restaurant-page/./src/home.js?");
 
 /***/ }),
 
@@ -26,7 +36,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n\n\n(0,_home_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\ndocument.addEventListener('DOMContentLoaded', function() {\n    const home = document.getElementById(\"home\");\n    const menu = document.getElementById(\"menu\");\n    const about = document.getElementById(\"about\")\n\n    home.onclick = (0,_home_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n    menu.onclick = function() {\n        console.log(\"aeeee\");\n    }\n    });\n\nconsole.log('traki');\n\n//# sourceURL=webpack://top-restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu.js */ \"./src/menu.js\");\n/* harmony import */ var _about_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./about.js */ \"./src/about.js\");\n\n\n\n\ndocument.addEventListener('DOMContentLoaded', function() {\n    \n    (0,_home_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n    const div = document.getElementById(\"content\");\n\n    function clearContent () {\n        div.innerHTML = `<nav class=\"navbar\">\n        <div class=\"navdiv\">\n            <ul>\n                <li><a href=\"#\" id=\"home\">Home</a></li>\n                <li><a href=\"#\" id=\"menu\">Menu</a></li>\n                <li><a href=\"#\" id=\"about\">About</a></li>\n            </ul>\n        </div>\n    </nav>`;\n    }\n\n    div.addEventListener(\"click\", function(e) {\n        if (e.target.id === \"home\") {\n            clearContent();\n            (0,_home_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n        } else if (e.target.id === \"menu\") {\n            clearContent();\n            (0,_menu_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n        } else if (e.target.id === \"about\") {\n            clearContent();\n            (0,_about_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n        }\n    });\n    });\n\nconsole.log('traki');\n\n\n//# sourceURL=webpack://top-restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadMenu)\n/* harmony export */ });\nfunction loadMenu() {\n    const div = document.getElementById(\"content\");\n    const menudiv = document.createElement(\"div\");\n    menudiv.classList.add(\"menupage\");\n\n    menudiv.innerHTML = `\n    <div class=\"meal\">\n        <h4>Pollos Breakfast</h4>\n        <img src=\"pollosbreakfast.jpg\" class=\"mealpic\">\n    </div>\n    <div class=\"meal\">\n        <h4>Chicken Burrito</h4>\n        <img src=\"chickenburrito.jpg\" class=\"mealpic\">\n    </div>\n    <div class=\"meal\">\n        <h4>Taco Salad (chicken)</h4>\n        <img src=\"tacosalad.jpg\" class=\"mealpic\">\n    </div>\n    <div class=\"meal\">\n        <h4>Chicken Wrap</h4>\n        <img src=\"chickenwrap.jpg\" class=\"mealpic\">\n    </div>`\n\n    div.appendChild(menudiv);\n};\n\n\n\n//# sourceURL=webpack://top-restaurant-page/./src/menu.js?");
 
 /***/ })
 
